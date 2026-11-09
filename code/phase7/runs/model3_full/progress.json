@@ -1,0 +1,12 @@
+{
+  "epoch": 25,
+  "offset": 0,
+  "step": 5125,
+  "train_seconds": 8189.280020205019,
+  "stop_reason": "epoch_limit",
+  "early_stopping": {
+    "min_delta": 0.001,
+    "reference_f1": null,
+    "stale_epochs": 0
+  }
+}

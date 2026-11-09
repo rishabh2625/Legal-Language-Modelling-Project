@@ -1,0 +1,18 @@
+{
+  "version": "encdec-512w-128w-v1",
+  "checkpoint": "d4d73182b497b12ee9ff6eca43275d23844c24c5103d7209b4764e38b06a84de",
+  "tokenizer": "ce28d26edf4caa9358ffe59b573e362d9c05a90e881957fa0f2d054a5bfed152",
+  "prompts": "614f348b3dcbb2a9f43706cd239438386dc396246cd5cc685a5ccb6eb06b7218",
+  "decode": {
+    "temperatures": [
+      0.0,
+      0.1,
+      0.5,
+      0.8
+    ],
+    "top_p": 0.95,
+    "max_new_tokens": 4096,
+    "no_repeat_ngram": 4,
+    "seed": 42
+  }
+}

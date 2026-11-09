@@ -1,0 +1,10 @@
+{
+  "epoch": 4,
+  "position": 0,
+  "step": 15828,
+  "best_macro_f1": 0.7052111415890656,
+  "bad_epochs": 3,
+  "complete": true,
+  "skipped": 6,
+  "stop_reason": "early_stopping"
+}

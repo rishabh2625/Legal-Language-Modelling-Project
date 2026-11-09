@@ -1,0 +1,125 @@
+{
+  "phase1_archive": "phase3_all_model_assets_kaggle.zip",
+  "shared_backup": "phase4_shared_20261019_120401_867669.zip",
+  "runs": {
+    "model1_full_tail": {
+      "local_submission": "model1_full_tail/submission.zip",
+      "prediction_sha256": "9402679092ec3cc98a9ca026c098b75f3ba6c6ff65b8c1edc450d7c16125c627",
+      "test_count": 1517,
+      "matched_notebook_export": true,
+      "codabench": {
+        "id": 999911,
+        "status": "Finished",
+        "displayed_score": 0.6986,
+        "mapping_confirmed": false
+      },
+      "local_dev_macro_f1": 0.703977,
+      "local_dev_source": "rerun of professor evaluator on saved predictions",
+      "backup_archive": "model1_full_tail_20261019_113148_842789.zip",
+      "checkpoint_member": "phase4_cjpe/runs/model1_full_tail/best.pt",
+      "checkpoint_sha256": "ba65b6f7dd44a1aedec0a15b8eb8466e68d6356844bbfa1f3d1246d8e7568b42",
+      "test_submission_member": "phase4_cjpe/runs/model1_full_tail/test/62a19bde3887/model1_full_tail_submission.zip"
+    },
+    "model3_full_tail": {
+      "local_submission": "model3_full_tail/submission.zip",
+      "prediction_sha256": "dfb01a7a362ac22f061f819d58194af5af5f75915b885dc092541539dce35be2",
+      "test_count": 1517,
+      "matched_notebook_export": true,
+      "codabench": {
+        "id": 1000012,
+        "status": "Finished",
+        "displayed_score": 0.7017,
+        "mapping_confirmed": false
+      },
+      "local_dev_macro_f1": 0.709125,
+      "local_dev_source": "rerun of professor evaluator on saved predictions",
+      "backup_archive": "model3_full_tail_20261019_113937_042015.zip",
+      "checkpoint_member": "phase4_cjpe/runs/model3_full_tail/best.pt",
+      "checkpoint_sha256": "5c5c38f1055972b859a0a570a936cc46054fd61faf9a4f8f6396160c9841bcd4",
+      "test_submission_member": "phase4_cjpe/runs/model3_full_tail/test/953b04d53ced/model3_full_tail_submission.zip"
+    },
+    "representation_head_tail": {
+      "local_submission": "representation_head_tail/submission.zip",
+      "prediction_sha256": "0abe483630076fec1aac1498b9c04dc4955e3f89ea9fcced6f64a1f0963876e7",
+      "test_count": 1517,
+      "matched_notebook_export": true,
+      "codabench": {
+        "id": 1000155,
+        "status": "Finished",
+        "displayed_score": 0.6743,
+        "mapping_confirmed": false
+      },
+      "local_dev_macro_f1": 0.679227,
+      "local_dev_source": "rerun of professor evaluator on saved predictions",
+      "backup_archive": "representation_head_tail_20261019_114933_076525.zip",
+      "checkpoint_member": "phase4_cjpe/runs/representation_head_tail/best.pt",
+      "checkpoint_sha256": "ad797fcc1c76176fa23105e2a07a042608a652208cdae0c9977c4276ea03405e",
+      "test_submission_member": "phase4_cjpe/runs/representation_head_tail/test/a70b3456b894/representation_head_tail_submission.zip"
+    },
+    "representation_hierarchical": {
+      "local_submission": "representation_hierarchical/submission.zip",
+      "prediction_sha256": "4e4da8a4afd005b5e83c6b8a2ea6838322d6f8b4f7cc065a231daea6abd663a7",
+      "test_count": 1517,
+      "matched_notebook_export": true,
+      "codabench": {
+        "id": 1000896,
+        "status": "Finished",
+        "displayed_score": 0.7076,
+        "mapping_confirmed": false
+      },
+      "local_dev_macro_f1": 0.705211,
+      "local_dev_source": "rerun of professor evaluator on saved predictions",
+      "backup_archive": "representation_hierarchical_20261019_115644_076503.zip",
+      "checkpoint_member": "phase4_cjpe/runs/representation_hierarchical/best.pt",
+      "checkpoint_sha256": "4d944b1f8023340fde8b9eb3b48a5aaafcba149102f68681cccb2f52d22504b0",
+      "test_submission_member": "phase4_cjpe/runs/representation_hierarchical/test/9a7508d0dc0d/representation_hierarchical_submission.zip"
+    },
+    "model1_lorma": {
+      "local_submission": "model1_lorma/submission.zip",
+      "prediction_sha256": "f4e2768c49484e10c0e18aa6c5e505f69dca695a5f088f2710383368bc292343",
+      "test_count": 1517,
+      "matched_notebook_export": true,
+      "codabench": {
+        "id": 1001380,
+        "status": "Finished",
+        "displayed_score": 0.712,
+        "mapping_confirmed": false
+      },
+      "local_dev_macro_f1": 0.707612,
+      "local_dev_source": "rerun of professor evaluator on saved predictions",
+      "backup_archive": "model1_lorma_20261019_112622_961862.zip",
+      "checkpoint_member": "phase4_cjpe/runs/model1_lorma/best.pt",
+      "checkpoint_sha256": "bcc71a09bd96288e61d011fd7eca0d9dfdb6061382d2bc33d2bee81f38df1d24",
+      "test_submission_member": "phase4_cjpe/runs/model1_lorma/test/1d2745c73849/model1_lorma_submission.zip"
+    },
+    "model2_full_min10": {
+      "local_submission": "model2_full_min10/submission.zip",
+      "prediction_sha256": "1aed9aac04bd2358a7320a017922aca7a9d0243c50eef96730be951b84eb5fc4",
+      "test_count": 1517,
+      "matched_notebook_export": false,
+      "codabench": {
+        "id": 1003762,
+        "status": "Finished",
+        "displayed_score": 0.5193,
+        "mapping_confirmed": false
+      }
+    }
+  },
+  "other_screenshot_rows": [
+    {
+      "id": 999910,
+      "status": "Cancelled"
+    },
+    {
+      "id": 1000875,
+      "status": "Preparing",
+      "possible_run": "representation_hierarchical"
+    }
+  ],
+  "dev_test_overlap": {
+    "shared_ids": 1517,
+    "shared_normalized_texts": 1517,
+    "matching_test_cases": 1517,
+    "matching_id_text_and_label": 1517
+  }
+}

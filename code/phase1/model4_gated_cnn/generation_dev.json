@@ -1,0 +1,17 @@
+{
+  "version": "gated-causal-conv-v1",
+  "checkpoint": "fcab9f52a114bf8b281a219d57cb45e8ff892106c20257d2da45335fcd6d5dbb",
+  "tokenizer": "ce28d26edf4caa9358ffe59b573e362d9c05a90e881957fa0f2d054a5bfed152",
+  "prompts": "8444cf116376ea00e1740b971c13e7ce5e762d2827507bcbc5797144294a65b4",
+  "decode": {
+    "temperatures": [
+      0.0,
+      0.3,
+      0.8
+    ],
+    "top_p": 0.95,
+    "max_new_tokens": 4096,
+    "no_repeat_ngram": 4,
+    "seed": 42
+  }
+}

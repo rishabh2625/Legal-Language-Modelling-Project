@@ -1,0 +1,26 @@
+{
+  "tfidf": {
+    "primary_metric_1": 0.3557531962201223,
+    "secondary_metric_1": 0.387409200968523,
+    "secondary_metric_2": 0.328879753340185,
+    "tp": 320,
+    "fp": 506,
+    "fn": 653
+  },
+  "bm25": {
+    "primary_metric_1": 0.13229571984435798,
+    "secondary_metric_1": 0.1440677966101695,
+    "secondary_metric_2": 0.1223021582733813,
+    "tp": 119,
+    "fp": 707,
+    "fn": 854
+  },
+  "mixture": {
+    "primary_metric_1": 0.330183435241801,
+    "secondary_metric_1": 0.3595641646489104,
+    "secondary_metric_2": 0.3052415210688592,
+    "tp": 297,
+    "fp": 529,
+    "fn": 676
+  }
+}

@@ -1,0 +1,6 @@
+{"step": 0, "total_data_tokens": 0, "decoder_target_tokens_with_eos": 0, "val_loss": 10.500788878917797, "perplexity": 36344.16251178004}
+{"step": 1, "total_data_tokens": 25232, "decoder_target_tokens_with_eos": 4959, "train_loss": 10.511876685697722, "lr": 2.00000320000512e-11, "total_tokens_per_second": 5181.155131222277, "estimated_remaining_hours": 26.805153448584353}
+{"step": 10, "total_data_tokens": 258365, "decoder_target_tokens_with_eos": 51106, "train_loss": 10.112976809291707, "lr": 4.653247445195912e-06, "total_tokens_per_second": 5790.871123777045, "estimated_remaining_hours": 23.971678215509062}
+{"step": 20, "total_data_tokens": 515715, "decoder_target_tokens_with_eos": 102068, "train_loss": 9.34160202583977, "lr": 9.816835706937131e-06, "total_tokens_per_second": 5787.629827331703, "estimated_remaining_hours": 23.972751747241922}
+{"step": 30, "total_data_tokens": 771147, "decoder_target_tokens_with_eos": 152537, "train_loss": 9.050694324372694, "lr": 1.4896743834790135e-05, "total_tokens_per_second": 5821.9328846272, "estimated_remaining_hours": 23.81931610520482}
+{"step": 30, "total_data_tokens": 771147, "decoder_target_tokens_with_eos": 152537, "val_loss": 9.080901786431797, "perplexity": 8785.885447965662}

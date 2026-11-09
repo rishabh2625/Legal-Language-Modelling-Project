@@ -1,0 +1,35 @@
+{
+  "macro_f1": 0.31991700180140287,
+  "micro_f1": 0.44578977524567304,
+  "subset_accuracy": 0.035851095177291036,
+  "macro_precision": 0.3036622010091248,
+  "macro_recall": 0.36224935657456575,
+  "mean_predicted_labels": 5.169924368922502,
+  "mean_gold_labels": 3.9157253707887243,
+  "empty_predictions": 331,
+  "label_dimension": 100,
+  "professor_dimension_matches": true,
+  "threshold": 0.1,
+  "saved_best_macro_f1": 0.31991700180140287,
+  "inference_seconds": 130.3837027080001,
+  "documents_per_second": 78.0849123666996,
+  "parameters": {
+    "total": 70378852,
+    "trainable": 70378852,
+    "adapted_modules": 0
+  },
+  "inference_memory": [
+    {
+      "gpu": 0,
+      "peak_reserved_gib": 0.947265625,
+      "peak_tensor_gib": 0.6741299629211426
+    },
+    {
+      "gpu": 1,
+      "peak_reserved_gib": 0.9765625,
+      "peak_tensor_gib": 0.5643372535705566
+    }
+  ],
+  "device": "cuda",
+  "checkpoint_bytes": 281552613
+}

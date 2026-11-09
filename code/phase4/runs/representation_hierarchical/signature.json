@@ -1,0 +1,59 @@
+{
+  "version": "phase4_cjpe_v1",
+  "spec": {
+    "name": "representation_hierarchical",
+    "model": "model3",
+    "method": "full",
+    "config": {
+      "seed": 42,
+      "chunk_tokens": 1024,
+      "overlap": 128,
+      "max_chunks": 6,
+      "representation": "hierarchical",
+      "aggregator": "bigru",
+      "head_dim": 128,
+      "dropout": 0.2,
+      "epochs": 8,
+      "patience": 3,
+      "effective_batch": 8,
+      "micro_batch_per_gpu": 2,
+      "activation_checkpointing": false,
+      "backbone_lr": 2e-05,
+      "adapter_lr": 0.0001,
+      "head_lr": 0.0002,
+      "weight_decay": 0.01,
+      "warmup_fraction": 0.06,
+      "min_lr_ratio": 0.1,
+      "clip": 1.0,
+      "label_smoothing": 0.0,
+      "class_weighting": false,
+      "rank": 8,
+      "initial_rank": 12,
+      "alpha": 16,
+      "orth_reg_weight": 0.5,
+      "model2_pool": "encoder_query",
+      "save_every": 100,
+      "log_every": 20,
+      "max_hours": 10.5,
+      "capacity_headroom_gib": 1.5,
+      "kd_alpha": 0.5,
+      "kd_temperature": 2.0,
+      "student_keep": null
+    }
+  },
+  "base_checkpoint": "50b00a9e89390e080178cbec343c40605ae93d9ccf51185e8cea7a47817022f0",
+  "tokenizer": "ce28d26edf4caa9358ffe59b573e362d9c05a90e881957fa0f2d054a5bfed152",
+  "cases": {
+    "train": "0d3fac4111fb4aa15baea255b345b2f9d35a89925edc48a96ed95a233120b2bf",
+    "dev": "c42f7dd6652d2e2d75456e7f4381b5c3aefbf26074dbe2798273e3630c0a7688"
+  },
+  "tokens": {
+    "train": "b92438d1ff8d59d1bcacb2a84d921512187ce2e946a238c7a5028b29a7c2d1a2",
+    "dev": "cd74854f775d0b2ef00279ad4c2beee6ae76c18ab4c0624870451273633014e0"
+  },
+  "teacher": null,
+  "libraries": {
+    "peft": "0.17.1",
+    "transformers": "4.55.4"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "phase1_archive": "phase5_kaggle_assets.zip",
+  "shared_backup": "phase5_shared_assets.zip",
+  "runs": {
+    "model3_full": {
+      "local_submission": "submission.zip",
+      "test_count": 13019,
+      "prediction_sha256": "bb0718da7a654a6c18183898b6461647534acb969f4a5f0fe3ab68b0130ea55a",
+      "matched_notebook_export": true,
+      "empty_predictions": 389,
+      "all_labels_predictions": 0,
+      "codabench": {
+        "id": 1013521,
+        "status": "Finished",
+        "displayed_score": 0.3743,
+        "mapping_confirmed": false
+      },
+      "local_dev_macro_f1": 0.377098,
+      "local_dev_source": "rerun of professor evaluator on saved predictions",
+      "backup_archive": "model3_full_phase5_assets.zip",
+      "checkpoint_member": "phase5_lsi/runs/model3_full/best.pt",
+      "checkpoint_sha256": "0d6ace5d99dcc2308216d523a6fa8c226196c0f4dd000b32f8723d1d81b541b9",
+      "test_submission_member": "phase5_lsi/runs/model3_full/test/92a4eaf4f862/model3_full_submission.zip"
+    },
+    "model1_lorma": {
+      "local_submission": "model1lorma/submission.zip",
+      "test_count": 13019,
+      "prediction_sha256": "32cf47041d7a46a9635f0cd43bba034211753eeeae823eef5bac68163dc1b730",
+      "matched_notebook_export": true,
+      "empty_predictions": 136,
+      "all_labels_predictions": 0,
+      "codabench": {
+        "id": 1012963,
+        "status": "Finished",
+        "displayed_score": 0.3302,
+        "mapping_confirmed": false
+      },
+      "local_dev_macro_f1": 0.333523,
+      "local_dev_source": "rerun of professor evaluator on saved predictions",
+      "backup_archive": "model1_lorma_phase5_assets.zip",
+      "checkpoint_member": "phase5_lsi/runs/model1_lorma/best.pt",
+      "checkpoint_sha256": "c5b109abcb0a3050dafc964be4702fe574b61f0354ab73b4d4d706da24ef722e",
+      "test_submission_member": "phase5_lsi/runs/model1_lorma/test/c2877478c680/model1_lorma_submission.zip"
+    },
+    "model2_encoder_only": {
+      "local_submission": "model 2/submission.zip",
+      "test_count": 13019,
+      "prediction_sha256": "c5426f6413cf532518f8cb0befd9af58b75efbba96e5e8b067d29eaade46fc93",
+      "matched_notebook_export": true,
+      "empty_predictions": 0,
+      "all_labels_predictions": 13019,
+      "codabench": {
+        "id": 1012980,
+        "status": "Finished",
+        "displayed_score": 0.0713,
+        "mapping_confirmed": false
+      },
+      "local_dev_macro_f1": 0.071439,
+      "local_dev_source": "executed notebook evaluator",
+      "selected_step": 0,
+      "selection_threshold": 0.3
+    },
+    "model4_distilled": {
+      "local_submission": "distill/submission.zip",
+      "test_count": 13019,
+      "prediction_sha256": "10eb2a3b53928a01e0aeb1971b400cc4cc642facd43c863dd07facf7c515fb3c",
+      "matched_notebook_export": true,
+      "empty_predictions": 473,
+      "all_labels_predictions": 0,
+      "codabench": {
+        "id": 1013531,
+        "status": "Failed",
+        "displayed_score": 0.3177,
+        "mapping_confirmed": false
+      },
+      "local_dev_macro_f1": 0.319917,
+      "local_dev_source": "rerun of professor evaluator on saved predictions",
+      "backup_archive": "model4_distilled_phase5_assets.zip",
+      "checkpoint_member": "phase5_lsi/runs/model4_distilled/best.pt",
+      "checkpoint_sha256": "2b049c1cb81930de1beb8e0cd7282e34e8a2f728a27640dd6af22f55cf6091cf",
+      "test_submission_member": "phase5_lsi/runs/model4_distilled/test/b92c01152475/model4_distilled_submission.zip",
+      "teacher": {
+        "name": "model3_full",
+        "checkpoint": "0d6ace5d99dcc2308216d523a6fa8c226196c0f4dd000b32f8723d1d81b541b9"
+      }
+    }
+  },
+  "other_screenshot_rows": [
+    {
+      "id": 1013050,
+      "status": "Submitted"
+    }
+  ]
+}

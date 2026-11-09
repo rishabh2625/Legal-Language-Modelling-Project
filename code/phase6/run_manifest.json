@@ -1,0 +1,133 @@
+{
+  "runs": {
+    "model1_lorma": {
+      "backup_archive": "phase6_model1_lorma_all_assets_after run.zip",
+      "checkpoint_member": "phase6_model1_lorma/run/best.pt",
+      "checkpoint_sha256": "6ac126787594e0331708becf601736f5e83825ec578a21e35bf6b3f0865705bb",
+      "test_submission_member": "phase6_model1_lorma/run/test/756cf34628b3/model1_lorma_submission.zip",
+      "test_count": 100,
+      "prediction_sha256": "e5d10675987d2736427adaa3ea684faa8cb7269e263029d057747a66e3cdc8f4",
+      "selection_bertscore": 0.848128,
+      "full_dev_metrics": {
+        "bertscore_f1": 0.847132,
+        "rouge1_f1": 0.422026,
+        "rougel_f1": 0.234341
+      },
+      "codabench": {
+        "id": 1021966,
+        "status": "Finished",
+        "bertscore_f1": 0.845,
+        "mapping_basis": "user-reported model and score"
+      }
+    },
+    "model1_full": {
+      "backup_archive": "phase6_model1_model3_full_all_assets_20261101_080921_832957.zip",
+      "checkpoint_member": "phase6_full_finetuning/runs/model1_full/best.pt",
+      "checkpoint_sha256": "9cae7e1c8c514a6f0abef2d7e52b97d3b493bc24fe3a6168ce7f97c9bfcba526",
+      "test_submission_member": "phase6_full_finetuning/runs/model1_full/test/0fc00ea1a2af/model1_full_submission.zip",
+      "test_count": 100,
+      "prediction_sha256": "cdc649b3253da257add7c4b5580d4b619645e674f47fad63e21626945971957a",
+      "selection_bertscore": 0.847472,
+      "full_dev_metrics": {
+        "bertscore_f1": 0.847334,
+        "rouge1_f1": 0.413354,
+        "rougel_f1": 0.232459
+      },
+      "codabench": {
+        "id": 1023537,
+        "status": "Finished",
+        "bertscore_f1": 0.8473,
+        "mapping_basis": "user-reported model and score"
+      }
+    },
+    "model3_full": {
+      "backup_archive": "phase6_model1_model3_full_all_assets_20261101_080921_832957.zip",
+      "checkpoint_member": "phase6_full_finetuning/runs/model3_full/best.pt",
+      "checkpoint_sha256": "6f657bf96b1add06c80eabcc09be3325ac9a03c4b98a946276a55f5a76249e02",
+      "test_submission_member": "phase6_full_finetuning/runs/model3_full/test/1fe193885087/model3_full_submission.zip",
+      "test_count": 100,
+      "prediction_sha256": "594e1db4c05a395cd1c1b0d1e4df79fb2598ddfdcf67997be98c94cda1417607",
+      "selection_bertscore": 0.847043,
+      "full_dev_metrics": {
+        "bertscore_f1": 0.847565,
+        "rouge1_f1": 0.425692,
+        "rougel_f1": 0.232736
+      },
+      "codabench": {
+        "id": 1023538,
+        "status": "Finished",
+        "bertscore_f1": 0.8443,
+        "mapping_basis": "user-reported model and score"
+      }
+    },
+    "model2_adapters": {
+      "backup_archive": "phase6_model2_student_all_results_20261102_135744_114919.zip",
+      "checkpoint_member": "phase6_model2_student/runs/model2_adapters/best.pt",
+      "checkpoint_sha256": "84c213106ba02cd44deda63f9c287c54f1d6527e8c12e99c342227b30db57c70",
+      "test_submission_member": "phase6_model2_student/runs/model2_adapters/test/c740df302ccb/model2_adapters_submission.zip",
+      "test_count": 100,
+      "prediction_sha256": "e68b2cf5a7a82898c5f24ed96f2850f26dfa3d33882b196f3432b4b5bb30c3ad",
+      "selection_bertscore": 0.814117,
+      "full_dev_metrics": {
+        "bertscore_f1": 0.813701,
+        "rouge1_f1": 0.321547,
+        "rougel_f1": 0.185564
+      },
+      "codabench": {
+        "id": 1027926,
+        "status": "Finished",
+        "bertscore_f1": 0.813,
+        "mapping_basis": "upload order and full dev score cross-check"
+      }
+    },
+    "model4_distilled": {
+      "backup_archive": "phase6_model2_student_all_results_20261102_135744_114919.zip",
+      "checkpoint_member": "phase6_model2_student/runs/model4_distilled/best.pt",
+      "checkpoint_sha256": "9dbae05ac0b4665ace68fb8e11433360c310aef4c0d2d255bdfa9d79d59eddb8",
+      "test_submission_member": "phase6_model2_student/runs/model4_distilled/test/0dcfd96af948/model4_distilled_submission.zip",
+      "test_count": 100,
+      "prediction_sha256": "d1fdbb0bebff227a39a6ff88a2c5a2873611b22b7d5074a223719f8f57af5a43",
+      "selection_bertscore": 0.828841,
+      "full_dev_metrics": {
+        "bertscore_f1": 0.826263,
+        "rouge1_f1": 0.31335,
+        "rougel_f1": 0.16978
+      },
+      "codabench": {
+        "id": 1027924,
+        "status": "Finished",
+        "bertscore_f1": 0.8248,
+        "mapping_basis": "upload order and full dev score cross-check"
+      },
+      "distillation": {
+        "kind": "sequence_level_teacher_targets",
+        "checkpoint": "c26ac48cb1711f1dff189bb2cd52829b289389aae15c614a034eec5c7fe7139c",
+        "predictions": "d7672cbd423ea1fd8b4b5e75177e4914f4008b3880ca30f9d0bcd8c525977635"
+      }
+    },
+    "model3_lora": {
+      "backup_archive": "phase6_model3_lora_all_assets_20261101_074350_265421.zip",
+      "checkpoint_member": "phase6_model3_lora/run/best.pt",
+      "checkpoint_sha256": "c26ac48cb1711f1dff189bb2cd52829b289389aae15c614a034eec5c7fe7139c",
+      "test_submission_member": "phase6_model3_lora/run/test/0e2ec341a56a/model3_lora_submission.zip",
+      "test_count": 100,
+      "prediction_sha256": "0f2d4b556015e5d4d4217bbe6542d5c8462dd00a4e45d364d2a6e6dfe27781f3",
+      "selection_bertscore": 0.848126,
+      "full_dev_metrics": {
+        "bertscore_f1": 0.848875,
+        "rouge1_f1": 0.424091,
+        "rougel_f1": 0.236177
+      },
+      "codabench": {
+        "id": 1022022,
+        "status": "Finished",
+        "bertscore_f1": 0.8447,
+        "mapping_basis": "user-reported model and score"
+      }
+    }
+  },
+  "teacher": "model3_lora",
+  "student": "model4_distilled",
+  "best_finished_run": "model1_full",
+  "phase1_checkpoint_manifest": "../phase1/checkpoint_manifest.json"
+}

@@ -1,0 +1,8 @@
+{
+  "step": 19500,
+  "examples": 623976,
+  "total_data_tokens": 499999202,
+  "decoder_target_tokens_with_eos": 99128004,
+  "selected_total_tokens": 499999202,
+  "complete": true
+}

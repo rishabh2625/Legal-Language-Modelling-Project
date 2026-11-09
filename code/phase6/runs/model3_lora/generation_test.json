@@ -1,0 +1,28 @@
+{
+  "version": "phase6_summarization_v1",
+  "checkpoint": "c26ac48cb1711f1dff189bb2cd52829b289389aae15c614a034eec5c7fe7139c",
+  "model": "model3",
+  "method": "lora",
+  "tokenizer": "ce28d26edf4caa9358ffe59b573e362d9c05a90e881957fa0f2d054a5bfed152",
+  "cases": "1e7a0462c7c1ae2f94d731b4c3cb68cd8510c68a3c54e30fc886827e1c02257b",
+  "context": {
+    "context_policy": "head_tail",
+    "source_tokens": 1536,
+    "target_tokens": 384
+  },
+  "prompt": [
+    "Summarize the following legal document, preserving key facts, legal reasoning and the decision.\nDocument:\n",
+    "\nSummary:\n"
+  ],
+  "decode": {
+    "temperature": 0.0,
+    "top_p": 0.95,
+    "max_new_tokens": 384,
+    "min_new_tokens": 32,
+    "no_repeat_ngram": 4,
+    "repetition_penalty": 1.1,
+    "batch_size": 4,
+    "seed": 42
+  },
+  "inference": "merged_low_rank_v1"
+}

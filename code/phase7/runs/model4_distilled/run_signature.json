@@ -1,0 +1,36 @@
+{
+  "version": "phase7-pcr-final-v2",
+  "spec": {
+    "name": "model4_distilled",
+    "method": "distill",
+    "model": "model4",
+    "embedding_dim": 256,
+    "lr": 2e-05,
+    "keep_blocks": [
+      0,
+      4,
+      7,
+      9,
+      15
+    ]
+  },
+  "dataset_id": "469bebf0514e8032caa83f12f3736d5be2aa49aafd5393e4055a4dcd48a97f26",
+  "sequence_length": 512,
+  "document_windows": 3,
+  "ranking_policies": [
+    "dense",
+    "hybrid_tfidf",
+    "hybrid_lexical"
+  ],
+  "tokenizer_sha256": "ce28d26edf4caa9358ffe59b573e362d9c05a90e881957fa0f2d054a5bfed152",
+  "phase1_sha256": "fcab9f52a114bf8b281a219d57cb45e8ff892106c20257d2da45335fcd6d5dbb",
+  "seed": 42,
+  "batch_queries": 4,
+  "negatives_per_query": 3,
+  "positives_per_query": 2,
+  "hard_negatives_per_query": 2,
+  "contrastive_temperature": 0.07,
+  "teacher_sha256": "9cfb312cd7edfa4645f6a4a65d64dd73e377bac8977b29f53dab3c4c25c89caa",
+  "distill_temperature": 2.0,
+  "distill_weight": 0.5
+}

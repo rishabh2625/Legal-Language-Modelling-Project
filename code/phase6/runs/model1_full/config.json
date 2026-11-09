@@ -1,0 +1,39 @@
+{
+  "run_name": "model1_full",
+  "model": "model1",
+  "method": "full",
+  "config": {
+    "seed": 42,
+    "epochs": 20,
+    "patience": 3,
+    "source_tokens": 1536,
+    "target_tokens": 384,
+    "context_policy": "head_tail",
+    "lr": 2e-05,
+    "min_lr_ratio": 0.1,
+    "warmup_fraction": 0.06,
+    "weight_decay": 0.01,
+    "clip": 1.0,
+    "effective_batch": 8,
+    "micro_batch": 1,
+    "activation_checkpointing": true,
+    "loss_chunk": 128,
+    "log_every": 20,
+    "save_every": 100,
+    "max_hours": 10.5,
+    "amp_initial_scale": 1024.0,
+    "max_consecutive_amp_skips": 12,
+    "capacity_headroom_gib": 1.5,
+    "initial_generation_baseline": true
+  },
+  "decode": {
+    "temperature": 0.0,
+    "top_p": 0.95,
+    "max_new_tokens": 384,
+    "min_new_tokens": 32,
+    "no_repeat_ngram": 4,
+    "repetition_penalty": 1.1,
+    "batch_size": 4,
+    "seed": 42
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "epoch": 11,
+  "position": 0,
+  "step": 9185,
+  "best_bertscore": 0.848126,
+  "bad_epochs": 3,
+  "complete": true,
+  "skipped": 0,
+  "consecutive_amp_skips": 0,
+  "initial_evaluated": true,
+  "stop_reason": "early_stopping"
+}

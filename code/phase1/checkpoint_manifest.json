@@ -1,0 +1,123 @@
+{
+  "shared_data_archive": "prep phase.zip",
+  "shared_data_folder": "phase1_scratch_data",
+  "phase1_weights_archive": "phase5_kaggle_assets.zip",
+  "models": {
+    "model1_decoder": {
+      "run_folder": "decoder_scratch_bpe_run_500m",
+      "progress": {
+        "step": 6761,
+        "tokens": 443086746,
+        "target_tokens": 810000000,
+        "complete": false
+      },
+      "files": {
+        "best.pt": {
+          "bytes": 479334327,
+          "sha256": "cbdbdc8fff1d44d999a857997521135e56c6f92e7b53ec4eb1e72f514e0ce2f2",
+          "archive_path": "phase5_model_assets/model1_decoder/best.pt"
+        },
+        "tokenizer.json": {
+          "bytes": 975958,
+          "sha256": "ce28d26edf4caa9358ffe59b573e362d9c05a90e881957fa0f2d054a5bfed152",
+          "archive_path": "phase5_model_assets/model1_decoder/tokenizer.json"
+        },
+        "run_config.json": {
+          "bytes": 710,
+          "sha256": "4c97a89900a29586595c84848a1c722681edea88a45ba8951703a806fc757595",
+          "archive_path": "phase5_model_assets/model1_decoder/run_config.json"
+        }
+      }
+    },
+    "model2_encoder_decoder": {
+      "run_folder": "encoder_decoder_500m_batch4_trial",
+      "progress": {
+        "step": 19500,
+        "examples": 623976,
+        "total_data_tokens": 499999202,
+        "decoder_target_tokens_with_eos": 99128004,
+        "selected_total_tokens": 499999202,
+        "complete": true
+      },
+      "files": {
+        "best.pt": {
+          "bytes": 489533205,
+          "sha256": "d4d73182b497b12ee9ff6eca43275d23844c24c5103d7209b4764e38b06a84de",
+          "archive_path": "phase5_model_assets/model2_encoder_decoder/best.pt"
+        },
+        "tokenizer.json": {
+          "bytes": 975958,
+          "sha256": "ce28d26edf4caa9358ffe59b573e362d9c05a90e881957fa0f2d054a5bfed152",
+          "archive_path": "phase5_model_assets/model2_encoder_decoder/tokenizer.json"
+        },
+        "run_config.json": {
+          "bytes": 616,
+          "sha256": "d1445d247e47f25516ab3819475e2bfea10e2bfc3d7275c251be2dca5d3c48cf",
+          "archive_path": "phase5_model_assets/model2_encoder_decoder/run_config.json"
+        }
+      }
+    },
+    "model3_local_global": {
+      "run_folder": "model3_local_global_810m_extension",
+      "progress": {
+        "step": 4731,
+        "examples": 151368,
+        "total_data_tokens": 310000000,
+        "predicted_tokens": 310000000,
+        "selected_total_tokens": 310000000,
+        "complete": true
+      },
+      "files": {
+        "best.pt": {
+          "bytes": 473568441,
+          "sha256": "50b00a9e89390e080178cbec343c40605ae93d9ccf51185e8cea7a47817022f0",
+          "archive_path": "phase5_model_assets/model3_local_global/best.pt"
+        },
+        "tokenizer.json": {
+          "bytes": 975958,
+          "sha256": "ce28d26edf4caa9358ffe59b573e362d9c05a90e881957fa0f2d054a5bfed152",
+          "archive_path": "phase5_model_assets/model3_local_global/tokenizer.json"
+        },
+        "run_config.json": {
+          "bytes": 2221,
+          "sha256": "8d81a3eef2186f442e42839f730c295caf85ee37fbd90c055d10ff8ec2ef33ac",
+          "archive_path": "phase5_model_assets/model3_local_global/run_config.json"
+        }
+      }
+    },
+    "model4_gated_cnn": {
+      "run_folder": "model4_gated_cnn_500m",
+      "progress": {
+        "step": 7630,
+        "examples": 244142,
+        "total_data_tokens": 500000000,
+        "predicted_tokens": 500000000,
+        "selected_total_tokens": 500000000,
+        "complete": true
+      },
+      "files": {
+        "best.pt": {
+          "bytes": 477667321,
+          "sha256": "fcab9f52a114bf8b281a219d57cb45e8ff892106c20257d2da45335fcd6d5dbb",
+          "archive_path": "phase5_model_assets/model4_gated_cnn/best.pt"
+        },
+        "tokenizer.json": {
+          "bytes": 975958,
+          "sha256": "ce28d26edf4caa9358ffe59b573e362d9c05a90e881957fa0f2d054a5bfed152",
+          "archive_path": "phase5_model_assets/model4_gated_cnn/tokenizer.json"
+        },
+        "run_config.json": {
+          "bytes": 764,
+          "sha256": "8a6bfcd4b838f997f5ce706bef0cdfc0b6412c0279573c1ece25a2f68ab947b5",
+          "archive_path": "phase5_model_assets/model4_gated_cnn/run_config.json"
+        }
+      }
+    }
+  },
+  "model3_parent": {
+    "run_folder": "model3_local_global_500m",
+    "required_checkpoint": "latest.pt",
+    "checkpoint_sha256": "295b39b67608f2399e74a45fafa2ebaaaac5061bee8dbd4ed81a02fbdad78317",
+    "training_tokens": 500000000
+  }
+}

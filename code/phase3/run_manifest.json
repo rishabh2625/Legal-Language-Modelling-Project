@@ -1,0 +1,696 @@
+{
+  "dataset_revision": "89edba6a44d6bb9593fd13b6895b5cd3b06eb82e",
+  "phase1_asset_archive": "phase3_all_model_assets_kaggle.zip",
+  "phase1_asset_files": {
+    "model1_decoder": {
+      "best.pt": {
+        "bytes": 479334327,
+        "sha256": "cbdbdc8fff1d44d999a857997521135e56c6f92e7b53ec4eb1e72f514e0ce2f2",
+        "archive_path": "phase3_model_assets/model1_decoder/best.pt"
+      },
+      "tokenizer.json": {
+        "bytes": 975958,
+        "sha256": "ce28d26edf4caa9358ffe59b573e362d9c05a90e881957fa0f2d054a5bfed152",
+        "archive_path": "phase3_model_assets/model1_decoder/tokenizer.json"
+      },
+      "run_config.json": {
+        "bytes": 710,
+        "sha256": "4c97a89900a29586595c84848a1c722681edea88a45ba8951703a806fc757595",
+        "archive_path": "phase3_model_assets/model1_decoder/run_config.json"
+      }
+    },
+    "model2_encoder_decoder": {
+      "best.pt": {
+        "bytes": 489533205,
+        "sha256": "d4d73182b497b12ee9ff6eca43275d23844c24c5103d7209b4764e38b06a84de",
+        "archive_path": "phase3_model_assets/model2_encoder_decoder/best.pt"
+      },
+      "tokenizer.json": {
+        "bytes": 975958,
+        "sha256": "ce28d26edf4caa9358ffe59b573e362d9c05a90e881957fa0f2d054a5bfed152",
+        "archive_path": "phase3_model_assets/model2_encoder_decoder/tokenizer.json"
+      },
+      "run_config.json": {
+        "bytes": 616,
+        "sha256": "d1445d247e47f25516ab3819475e2bfea10e2bfc3d7275c251be2dca5d3c48cf",
+        "archive_path": "phase3_model_assets/model2_encoder_decoder/run_config.json"
+      }
+    },
+    "model3_local_global": {
+      "best.pt": {
+        "bytes": 473568441,
+        "sha256": "50b00a9e89390e080178cbec343c40605ae93d9ccf51185e8cea7a47817022f0",
+        "archive_path": "phase3_model_assets/model3_local_global/best.pt"
+      },
+      "tokenizer.json": {
+        "bytes": 975958,
+        "sha256": "ce28d26edf4caa9358ffe59b573e362d9c05a90e881957fa0f2d054a5bfed152",
+        "archive_path": "phase3_model_assets/model3_local_global/tokenizer.json"
+      },
+      "run_config.json": {
+        "bytes": 2221,
+        "sha256": "8d81a3eef2186f442e42839f730c295caf85ee37fbd90c055d10ff8ec2ef33ac",
+        "archive_path": "phase3_model_assets/model3_local_global/run_config.json"
+      }
+    },
+    "model4_gated_cnn": {
+      "best.pt": {
+        "bytes": 477667321,
+        "sha256": "fcab9f52a114bf8b281a219d57cb45e8ff892106c20257d2da45335fcd6d5dbb",
+        "archive_path": "phase3_model_assets/model4_gated_cnn/best.pt"
+      },
+      "tokenizer.json": {
+        "bytes": 975958,
+        "sha256": "ce28d26edf4caa9358ffe59b573e362d9c05a90e881957fa0f2d054a5bfed152",
+        "archive_path": "phase3_model_assets/model4_gated_cnn/tokenizer.json"
+      },
+      "run_config.json": {
+        "bytes": 764,
+        "sha256": "8a6bfcd4b838f997f5ce706bef0cdfc0b6412c0279573c1ece25a2f68ab947b5",
+        "archive_path": "phase3_model_assets/model4_gated_cnn/run_config.json"
+      }
+    }
+  },
+  "distillation": {
+    "teacher": "model1_full",
+    "student": "model3_kd"
+  },
+  "codabench_mappings_confirmed_by_submitter": true,
+  "runs": {
+    "model1_lora": {
+      "model": "model1",
+      "method": "lora",
+      "best_validation_macro_f1": 0.3776417346669092,
+      "reloaded_validation_macro_f1": 0.3776417346669092,
+      "official_local_macro_f1": 0.377642,
+      "domains": {
+        "CL": {
+          "macro_f1": 0.2868484962845149,
+          "macro_precision": 0.29387496590189677,
+          "macro_recall": 0.3154640548634961
+        },
+        "IT": {
+          "macro_f1": 0.39934301496477664,
+          "macro_precision": 0.4472515052117029,
+          "macro_recall": 0.3828156098465732
+        }
+      },
+      "parameters": {
+        "total": 122721293,
+        "trainable": 2904717,
+        "adapted_modules": 64
+      },
+      "kaggle_run_directory": "/kaggle/working/phase3_rr_v2/direct/model1/lora",
+      "kaggle_export_path": "/kaggle/working/phase3_rr_v2/direct/model1/lora/test_predictions/submission_model1_lora_v2.zip",
+      "prediction_sha256": "ddd28cdd43c3944ea7efdbec2b6ef17df45a99900f3ac014bc1b41417151a977",
+      "local_download": {
+        "folder": "model1_lora",
+        "modified_ist": "2026-10-16T01:41:11+05:30"
+      },
+      "codabench": {
+        "id": 991134,
+        "status": "Finished",
+        "displayed_score": 0.4263,
+        "mapping_basis": "download time"
+      }
+    },
+    "model1_lorma": {
+      "model": "model1",
+      "method": "lorma",
+      "best_validation_macro_f1": 0.38420853613289646,
+      "reloaded_validation_macro_f1": 0.38420853613289646,
+      "official_local_macro_f1": 0.384209,
+      "domains": {
+        "CL": {
+          "macro_f1": 0.30135103464611657,
+          "macro_precision": 0.3207989313100082,
+          "macro_recall": 0.3216334568342739
+        },
+        "IT": {
+          "macro_f1": 0.40905450832437523,
+          "macro_precision": 0.4488280118169786,
+          "macro_recall": 0.39932850761877625
+        }
+      },
+      "parameters": {
+        "total": 123081741,
+        "trainable": 3265165,
+        "adapted_modules": 64
+      },
+      "kaggle_run_directory": "/kaggle/working/phase3_rr_v2/direct/model1/lorma",
+      "kaggle_export_path": "/kaggle/working/phase3_rr_v2/direct/model1/lorma/test_predictions/submission_model1_lorma_v2.zip",
+      "prediction_sha256": "86ed05702e52efe003761879ac7675ffc369c413a1cd536207e924d042defece",
+      "local_download": {
+        "folder": "model1 lorma",
+        "modified_ist": "2026-10-16T01:50:03+05:30"
+      },
+      "codabench": {
+        "id": 991146,
+        "status": "Finished",
+        "displayed_score": 0.4148,
+        "mapping_basis": "download time"
+      }
+    },
+    "model1_ia3": {
+      "model": "model1",
+      "method": "ia3",
+      "best_validation_macro_f1": 0.3688568385507925,
+      "reloaded_validation_macro_f1": 0.3688568385507925,
+      "official_local_macro_f1": 0.368857,
+      "domains": {
+        "CL": {
+          "macro_f1": 0.276542699604326,
+          "macro_precision": 0.283729923996435,
+          "macro_recall": 0.2979870549759394
+        },
+        "IT": {
+          "macro_f1": 0.39152654964449246,
+          "macro_precision": 0.42709051884866717,
+          "macro_recall": 0.3741450412847003
+        }
+      },
+      "parameters": {
+        "total": 119905293,
+        "trainable": 88717,
+        "adapted_modules": 32
+      },
+      "kaggle_run_directory": "/kaggle/working/phase3_rr_v2/direct/model1/ia3",
+      "kaggle_export_path": "/kaggle/working/phase3_rr_v2/direct/model1/ia3/test_predictions/submission_model1_ia3_v2.zip",
+      "prediction_sha256": "9bd09f9bee2616118fd3c93aa68944a4137e4bcc0e11c73c8fd576a7c80ab02a",
+      "local_download": {
+        "folder": "model1_ia3",
+        "modified_ist": "2026-10-16T02:10:25+05:30"
+      },
+      "codabench": {
+        "id": 991204,
+        "status": "Finished",
+        "displayed_score": 0.3995,
+        "mapping_basis": "download time"
+      }
+    },
+    "model1_full": {
+      "model": "model1",
+      "method": "full",
+      "best_validation_macro_f1": 0.4025137041650671,
+      "reloaded_validation_macro_f1": 0.4025137041650671,
+      "official_local_macro_f1": 0.402514,
+      "domains": {
+        "CL": {
+          "macro_f1": 0.32498171218984007,
+          "macro_precision": 0.32883736136690567,
+          "macro_recall": 0.3505532899475106
+        },
+        "IT": {
+          "macro_f1": 0.41966697430823385,
+          "macro_precision": 0.5203431153038705,
+          "macro_recall": 0.38368181398443557
+        }
+      },
+      "parameters": {
+        "total": 119837709,
+        "trainable": 119837709,
+        "adapted_modules": 0
+      },
+      "kaggle_run_directory": "/kaggle/working/phase3_rr_v2/direct/model1/full",
+      "kaggle_export_path": "/kaggle/working/phase3_rr_v2/direct/model1/full/test_predictions/submission_model1_full_v2.zip",
+      "prediction_sha256": "f26d4bc1c2cc69bdd9ef0855201290689e68ddbb73b8e94dcd0a4ab2f0272709",
+      "local_download": {
+        "folder": "model1_full",
+        "modified_ist": "2026-10-16T01:51:51+05:30"
+      },
+      "codabench": {
+        "id": 991163,
+        "status": "Finished",
+        "displayed_score": 0.4293,
+        "mapping_basis": "download order and time"
+      }
+    },
+    "model2_lora": {
+      "model": "model2",
+      "method": "lora",
+      "best_validation_macro_f1": 0.1279901318691364,
+      "reloaded_validation_macro_f1": 0.1279901318691364,
+      "official_local_macro_f1": 0.12799,
+      "domains": {
+        "CL": {
+          "macro_f1": 0.1229274747211904,
+          "macro_precision": 0.1567937637456308,
+          "macro_recall": 0.1625484516570415
+        },
+        "IT": {
+          "macro_f1": 0.12617171655011064,
+          "macro_precision": 0.13071303458883288,
+          "macro_recall": 0.15327205011097556
+        }
+      },
+      "parameters": {
+        "total": 125937165,
+        "trainable": 3580557,
+        "adapted_modules": 116
+      },
+      "kaggle_run_directory": "/kaggle/working/phase3_rr_v2/direct/model2/lora",
+      "kaggle_export_path": "/kaggle/working/phase3_rr_v2/direct/model2/lora/test_predictions/submission_model2_lora_v2.zip",
+      "prediction_sha256": "288c2467d6627769ee2e68a12bac36673de81eb0d9891b97f8dce780bb2a9fb6",
+      "local_download": {
+        "folder": "model2_lora_v2",
+        "modified_ist": "2026-10-16T02:12:49+05:30"
+      },
+      "codabench": {
+        "id": 991212,
+        "status": "Finished",
+        "displayed_score": 0.1338,
+        "mapping_basis": "download time"
+      }
+    },
+    "model2_lorma": {
+      "model": "model2",
+      "method": "lorma",
+      "best_validation_macro_f1": 0.1340569501608442,
+      "reloaded_validation_macro_f1": 0.1340569501608442,
+      "official_local_macro_f1": 0.134057,
+      "domains": {
+        "CL": {
+          "macro_f1": 0.1329436102076983,
+          "macro_precision": 0.14716193753683274,
+          "macro_recall": 0.14862714715586542
+        },
+        "IT": {
+          "macro_f1": 0.12259130465183846,
+          "macro_precision": 0.1410769712496509,
+          "macro_recall": 0.14143761532099
+        }
+      },
+      "parameters": {
+        "total": 125937165,
+        "trainable": 3580557,
+        "adapted_modules": 116
+      },
+      "kaggle_run_directory": "/kaggle/working/phase3_rr_v2/direct/model2/lorma",
+      "kaggle_export_path": "/kaggle/working/phase3_rr_v2/direct/model2/lorma/test_predictions/submission_model2_lorma_v2.zip",
+      "prediction_sha256": "cf1480d84f564030335f99d61e812febb1908a1a3a82a83de307a44643618f4d",
+      "local_download": null
+    },
+    "model2_ia3": {
+      "model": "model2",
+      "method": "ia3",
+      "best_validation_macro_f1": 0.09498027667361585,
+      "reloaded_validation_macro_f1": 0.09498027667361585,
+      "official_local_macro_f1": 0.09498,
+      "domains": {
+        "CL": {
+          "macro_f1": 0.08851017047761249,
+          "macro_precision": 0.09336479261720584,
+          "macro_recall": 0.13679949838628258
+        },
+        "IT": {
+          "macro_f1": 0.09772581000781592,
+          "macro_precision": 0.08510336873319693,
+          "macro_recall": 0.13352448608679052
+        }
+      },
+      "parameters": {
+        "total": 122448141,
+        "trainable": 91533,
+        "adapted_modules": 58
+      },
+      "kaggle_run_directory": "/kaggle/working/phase3_rr_v2/direct/model2/ia3",
+      "kaggle_export_path": "/kaggle/working/phase3_rr_v2/direct/model2/ia3/test_predictions/submission_model2_ia3_v2.zip",
+      "prediction_sha256": "5d5c726239cab4520f1c001ecb7153ad21cbba937e3aee043427ff9cd8614cf8",
+      "local_download": null
+    },
+    "model2_full": {
+      "model": "model2",
+      "method": "full",
+      "best_validation_macro_f1": 0.19679925065370057,
+      "reloaded_validation_macro_f1": 0.19679925065370057,
+      "official_local_macro_f1": 0.196799,
+      "domains": {
+        "CL": {
+          "macro_f1": 0.18065163349328095,
+          "macro_precision": 0.1875827274030364,
+          "macro_recall": 0.18991269630523727
+        },
+        "IT": {
+          "macro_f1": 0.19304448540090566,
+          "macro_precision": 0.21864577985099556,
+          "macro_recall": 0.18885795878999026
+        }
+      },
+      "parameters": {
+        "total": 122377741,
+        "trainable": 122377741,
+        "adapted_modules": 0
+      },
+      "kaggle_run_directory": "/kaggle/working/phase3_rr_v2/direct/model2/full",
+      "kaggle_export_path": "/kaggle/working/phase3_rr_v2/direct/model2/full/test_predictions/submission_model2_full_v2.zip",
+      "prediction_sha256": "13153e87951a0e88979756a38e20729bb2305ea68f7fdb9da6fb092fbbec93d5",
+      "local_download": null
+    },
+    "model3_lora": {
+      "model": "model3",
+      "method": "lora",
+      "best_validation_macro_f1": 0.3840894386803199,
+      "reloaded_validation_macro_f1": 0.3840894386803199,
+      "official_local_macro_f1": 0.384089,
+      "domains": {
+        "CL": {
+          "macro_f1": 0.27416396211698035,
+          "macro_precision": 0.2894917464605259,
+          "macro_recall": 0.30567684757248687
+        },
+        "IT": {
+          "macro_f1": 0.41225760183249005,
+          "macro_precision": 0.4420072652117405,
+          "macro_recall": 0.4099482401656314
+        }
+      },
+      "parameters": {
+        "total": 121279501,
+        "trainable": 2904717,
+        "adapted_modules": 64
+      },
+      "kaggle_run_directory": "/kaggle/working/phase3_rr_v2/direct/model3/lora",
+      "kaggle_export_path": "/kaggle/working/phase3_rr_v2/direct/model3/lora/test_predictions/submission_model3_lora_v2.zip",
+      "prediction_sha256": "75e8646e922a9f8030635fc06178f05034aeed3a77a9ec041465716f0fde19f1",
+      "local_download": {
+        "folder": "model3_lora",
+        "modified_ist": "2026-10-16T02:14:41+05:30"
+      },
+      "codabench": {
+        "id": 991218,
+        "status": "Finished",
+        "displayed_score": 0.4086,
+        "mapping_basis": "download time"
+      }
+    },
+    "model3_lorma": {
+      "model": "model3",
+      "method": "lorma",
+      "best_validation_macro_f1": 0.38867854238520905,
+      "reloaded_validation_macro_f1": 0.38867854238520905,
+      "official_local_macro_f1": 0.388679,
+      "domains": {
+        "CL": {
+          "macro_f1": 0.26201168373839184,
+          "macro_precision": 0.2682543520372104,
+          "macro_recall": 0.27669925978958315
+        },
+        "IT": {
+          "macro_f1": 0.42971149237920964,
+          "macro_precision": 0.5016484798931216,
+          "macro_recall": 0.4166301077639949
+        }
+      },
+      "parameters": {
+        "total": 121639949,
+        "trainable": 3265165,
+        "adapted_modules": 64
+      },
+      "kaggle_run_directory": "/kaggle/working/phase3_rr_v2/direct/model3/lorma",
+      "kaggle_export_path": "/kaggle/working/phase3_rr_v2/direct/model3/lorma/test_predictions/submission_model3_lorma_v2.zip",
+      "prediction_sha256": "65334ac2ebe459f92a21af6310649fccf76a0fe8bf04375c5b69e87cbb93abd0",
+      "local_download": {
+        "folder": "model3_lorma",
+        "modified_ist": "2026-10-16T02:16:45+05:30"
+      },
+      "codabench": {
+        "id": 991222,
+        "status": "Finished",
+        "displayed_score": 0.4095,
+        "mapping_basis": "download time"
+      }
+    },
+    "model3_ia3": {
+      "model": "model3",
+      "method": "ia3",
+      "best_validation_macro_f1": 0.37570541445598316,
+      "reloaded_validation_macro_f1": 0.37570541445598316,
+      "official_local_macro_f1": 0.375705,
+      "domains": {
+        "CL": {
+          "macro_f1": 0.2900792037901895,
+          "macro_precision": 0.29382530238999555,
+          "macro_recall": 0.31307945851125285
+        },
+        "IT": {
+          "macro_f1": 0.4104326498116733,
+          "macro_precision": 0.436489004400407,
+          "macro_recall": 0.400688365290264
+        }
+      },
+      "parameters": {
+        "total": 118463501,
+        "trainable": 88717,
+        "adapted_modules": 32
+      },
+      "kaggle_run_directory": "/kaggle/working/phase3_rr_v2/direct/model3/ia3",
+      "kaggle_export_path": "/kaggle/working/phase3_rr_v2/direct/model3/ia3/test_predictions/submission_model3_ia3_v2.zip",
+      "prediction_sha256": "71effe2b5417cb839de73a594334aab55466f69da0e1b78364ca40c1d2e92eba",
+      "local_download": {
+        "folder": "model3_ia3",
+        "modified_ist": "2026-10-16T02:07:28+05:30"
+      },
+      "codabench": {
+        "id": 991190,
+        "status": "Finished",
+        "displayed_score": 0.3976,
+        "mapping_basis": "download time"
+      }
+    },
+    "model3_full": {
+      "model": "model3",
+      "method": "full",
+      "best_validation_macro_f1": 0.3906423893368165,
+      "reloaded_validation_macro_f1": 0.3906423893368165,
+      "official_local_macro_f1": 0.390642,
+      "domains": {
+        "CL": {
+          "macro_f1": 0.3048273607354023,
+          "macro_precision": 0.32016922783386464,
+          "macro_recall": 0.3141026980492147
+        },
+        "IT": {
+          "macro_f1": 0.42245690280870485,
+          "macro_precision": 0.4837887091704702,
+          "macro_recall": 0.4001474129435613
+        }
+      },
+      "parameters": {
+        "total": 118395917,
+        "trainable": 118395917,
+        "adapted_modules": 0
+      },
+      "kaggle_run_directory": "/kaggle/working/phase3_rr_v2/direct/model3/full",
+      "kaggle_export_path": "/kaggle/working/phase3_rr_v2/direct/model3/full/test_predictions/submission_model3_full_v2.zip",
+      "prediction_sha256": "2c68cf662ff3e334095d0eb98a16d845d6a33fd5068a60d0110106dc81a66c9b",
+      "local_download": {
+        "folder": "model3_full",
+        "modified_ist": "2026-10-16T03:12:23+05:30"
+      },
+      "codabench": {
+        "id": 991322,
+        "status": "Finished",
+        "displayed_score": 0.4246,
+        "mapping_basis": "download time"
+      }
+    },
+    "model4_lora": {
+      "model": "model4",
+      "method": "lora",
+      "best_validation_macro_f1": 0.3415094948155011,
+      "reloaded_validation_macro_f1": 0.3415094948155011,
+      "official_local_macro_f1": 0.341509,
+      "domains": {
+        "CL": {
+          "macro_f1": 0.26673417578684483,
+          "macro_precision": 0.2641817860136838,
+          "macro_recall": 0.297700706387945
+        },
+        "IT": {
+          "macro_f1": 0.37258304060868525,
+          "macro_precision": 0.40656402675755066,
+          "macro_recall": 0.36197489603574395
+        }
+      },
+      "parameters": {
+        "total": 121384973,
+        "trainable": 1985293,
+        "adapted_modules": 48
+      },
+      "kaggle_run_directory": "/kaggle/working/phase3_rr_v2/direct/model4/lora",
+      "kaggle_export_path": "/kaggle/working/phase3_rr_v2/direct/model4/lora/test_predictions/submission_model4_lora_v2.zip",
+      "prediction_sha256": "ca2f46ab97dfefe4e5fd25efc5728c72dcb067343a2a0efd9322e1352cc7dda9",
+      "local_download": {
+        "folder": "model4_lora",
+        "modified_ist": "2026-10-16T12:08:33+05:30"
+      },
+      "codabench": {
+        "id": 992206,
+        "status": "Finished",
+        "displayed_score": 0.3935,
+        "mapping_basis": "download time"
+      }
+    },
+    "model4_lorma": {
+      "model": "model4",
+      "method": "lorma",
+      "best_validation_macro_f1": 0.3553505919509919,
+      "reloaded_validation_macro_f1": 0.3553505919509919,
+      "official_local_macro_f1": 0.355351,
+      "domains": {
+        "CL": {
+          "macro_f1": 0.2694719499732694,
+          "macro_precision": 0.2633641617966431,
+          "macro_recall": 0.2970071847561116
+        },
+        "IT": {
+          "macro_f1": 0.39171912322621577,
+          "macro_precision": 0.431519575028173,
+          "macro_recall": 0.3836909141912378
+        }
+      },
+      "parameters": {
+        "total": 121384973,
+        "trainable": 1985293,
+        "adapted_modules": 48
+      },
+      "kaggle_run_directory": "/kaggle/working/phase3_rr_v2/direct/model4/lorma",
+      "kaggle_export_path": "/kaggle/working/phase3_rr_v2/direct/model4/lorma/test_predictions/submission_model4_lorma_v2.zip",
+      "prediction_sha256": "1b345092de5d3b97bdc8a2cbcaadbdb9cda1204c815adf265568b3b575f5c0d7",
+      "local_download": {
+        "folder": "model4_lorma",
+        "modified_ist": "2026-10-16T12:10:36+05:30"
+      },
+      "codabench": {
+        "id": 992216,
+        "status": "Failed",
+        "displayed_score": 0.3913,
+        "mapping_basis": "order in the first batch"
+      }
+    },
+    "model4_ia3": {
+      "model": "model4",
+      "method": "ia3",
+      "best_validation_macro_f1": 0.31426387059062016,
+      "reloaded_validation_macro_f1": 0.31426387059062016,
+      "official_local_macro_f1": 0.314264,
+      "domains": {
+        "CL": {
+          "macro_f1": 0.2354494412867657,
+          "macro_precision": 0.23121278614225876,
+          "macro_recall": 0.2910296811874228
+        },
+        "IT": {
+          "macro_f1": 0.34417445912270456,
+          "macro_precision": 0.38645245333286427,
+          "macro_recall": 0.3329396006170739
+        }
+      },
+      "parameters": {
+        "total": 119480333,
+        "trainable": 80653,
+        "adapted_modules": 32
+      },
+      "kaggle_run_directory": "/kaggle/working/phase3_rr_v2/direct/model4/ia3",
+      "kaggle_export_path": "/kaggle/working/phase3_rr_v2/direct/model4/ia3/test_predictions/submission_model4_ia3_v2.zip",
+      "prediction_sha256": "89dc798c6d5ba193a712b9d70b0f60ec9cadec223e4f805e01f651c344b98eb9",
+      "local_download": {
+        "folder": "model4_ia3",
+        "modified_ist": "2026-10-16T12:12:12+05:30"
+      },
+      "codabench": {
+        "id": 992355,
+        "status": "Finished",
+        "displayed_score": 0.3478,
+        "mapping_basis": "retry match with the same score as failed row 992217"
+      }
+    },
+    "model4_full": {
+      "model": "model4",
+      "method": "full",
+      "best_validation_macro_f1": 0.35695357046430687,
+      "reloaded_validation_macro_f1": 0.35695357046430687,
+      "official_local_macro_f1": 0.356954,
+      "domains": {
+        "CL": {
+          "macro_f1": 0.2576572380271508,
+          "macro_precision": 0.2597974874455593,
+          "macro_recall": 0.2778758133016136
+        },
+        "IT": {
+          "macro_f1": 0.402152699559395,
+          "macro_precision": 0.4416036532643991,
+          "macro_recall": 0.38924042434831085
+        }
+      },
+      "parameters": {
+        "total": 119418893,
+        "trainable": 119418893,
+        "adapted_modules": 0
+      },
+      "kaggle_run_directory": "/kaggle/working/phase3_rr_v2/direct/model4/full",
+      "kaggle_export_path": "/kaggle/working/phase3_rr_v2/direct/model4/full/test_predictions/submission_model4_full_v2.zip",
+      "prediction_sha256": "16316a364a0ce15c7f6e697c05a93cf9d632fdb9767d09fd5dbeb92fdaa94ae6",
+      "local_download": {
+        "folder": "model4_full",
+        "modified_ist": "2026-10-16T12:12:57+05:30"
+      },
+      "codabench": {
+        "id": 992218,
+        "status": "Finished",
+        "displayed_score": 0.3943,
+        "mapping_basis": "order in the first batch"
+      }
+    },
+    "model3_kd": {
+      "model": "model3",
+      "method": "kd",
+      "best_validation_macro_f1": 0.4169236959608398,
+      "reloaded_validation_macro_f1": 0.4169236959608398,
+      "official_local_macro_f1": 0.416924,
+      "domains": {
+        "CL": {
+          "macro_f1": 0.32284666205085305,
+          "macro_precision": 0.32525570586990626,
+          "macro_recall": 0.34845524345697704
+        },
+        "IT": {
+          "macro_f1": 0.45362769552104215,
+          "macro_precision": 0.5160089207223795,
+          "macro_recall": 0.4266021843921293
+        }
+      },
+      "parameters": {
+        "total": 118395917,
+        "trainable": 118395917,
+        "adapted_modules": 0
+      },
+      "kaggle_run_directory": "/kaggle/working/phase3_rr_v2/distillation/model3",
+      "kaggle_export_path": "/kaggle/working/phase3_rr_v2/distillation/model3/test_predictions/submission_model3_kd_v2.zip",
+      "prediction_sha256": "23dab9f8b7eff022b4dc7655a5a332456e0517a55cc450562805ea006c53d930",
+      "local_download": {
+        "folder": "model3_kd",
+        "modified_ist": "2026-10-16T12:14:05+05:30"
+      },
+      "codabench": {
+        "id": 992365,
+        "status": "Finished",
+        "displayed_score": 0.429,
+        "mapping_basis": "export order and validation cross-check"
+      }
+    }
+  },
+  "additional_screenshot_rows": [
+    {
+      "id": 992217,
+      "status": "Failed",
+      "displayed_score": 0.3478,
+      "possible_run": "model4_ia3"
+    },
+    {
+      "id": 992362,
+      "status": "Finished",
+      "displayed_score": null
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "step": 4731,
+  "examples": 151368,
+  "total_data_tokens": 310000000,
+  "predicted_tokens": 310000000,
+  "selected_total_tokens": 310000000,
+  "complete": true
+}

@@ -1,0 +1,5 @@
+{
+  "checkpoint": "e67620d6be70c9f571798970a39ca681eeb204148d241f4d791a08b480c2df2a",
+  "texts": "543fa144f69e685dc9607e1a1cec8ef626d7d51e6ae87635b098d166c77ebd50",
+  "policy": "model4-fixed-teacher-crf-v1"
+}

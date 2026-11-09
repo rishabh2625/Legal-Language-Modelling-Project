@@ -1,0 +1,124 @@
+{
+  "spec": {
+    "name": "model3_full",
+    "method": "full",
+    "model": "model3",
+    "embedding_dim": 256,
+    "lr": 2e-05
+  },
+  "signature": {
+    "version": "phase7-pcr-final-v2",
+    "spec": {
+      "name": "model3_full",
+      "method": "full",
+      "model": "model3",
+      "embedding_dim": 256,
+      "lr": 2e-05
+    },
+    "dataset_id": "469bebf0514e8032caa83f12f3736d5be2aa49aafd5393e4055a4dcd48a97f26",
+    "sequence_length": 512,
+    "document_windows": 3,
+    "ranking_policies": [
+      "dense",
+      "hybrid_tfidf",
+      "hybrid_lexical"
+    ],
+    "tokenizer_sha256": "ce28d26edf4caa9358ffe59b573e362d9c05a90e881957fa0f2d054a5bfed152",
+    "phase1_sha256": "50b00a9e89390e080178cbec343c40605ae93d9ccf51185e8cea7a47817022f0",
+    "seed": 42,
+    "batch_queries": 4,
+    "negatives_per_query": 3,
+    "positives_per_query": 2,
+    "hard_negatives_per_query": 2,
+    "contrastive_temperature": 0.07,
+    "teacher_sha256": null,
+    "distill_temperature": null,
+    "distill_weight": null
+  },
+  "metrics": {
+    "primary_metric_1": 0.3746525847693163,
+    "secondary_metric_1": 0.40799031476997577,
+    "secondary_metric_2": 0.34635149023638234,
+    "tp": 337,
+    "fp": 489,
+    "fn": 636
+  },
+  "step": 3280,
+  "ranking_policy": "hybrid_tfidf",
+  "policy_metrics": {
+    "dense": {
+      "primary_metric_1": 0.2946081156197888,
+      "secondary_metric_1": 0.32082324455205813,
+      "secondary_metric_2": 0.2723535457348407,
+      "tp": 265,
+      "fp": 561,
+      "fn": 708
+    },
+    "hybrid_tfidf": {
+      "primary_metric_1": 0.3746525847693163,
+      "secondary_metric_1": 0.40799031476997577,
+      "secondary_metric_2": 0.34635149023638234,
+      "tp": 337,
+      "fp": 489,
+      "fn": 636
+    },
+    "hybrid_lexical": {
+      "primary_metric_1": 0.3546414674819344,
+      "secondary_metric_1": 0.38619854721549635,
+      "secondary_metric_2": 0.3278520041109969,
+      "tp": 319,
+      "fp": 507,
+      "fn": 654
+    }
+  },
+  "dense_metrics": {
+    "primary_metric_1": 0.2946081156197888,
+    "secondary_metric_1": 0.32082324455205813,
+    "secondary_metric_2": 0.2723535457348407,
+    "tp": 265,
+    "fp": 561,
+    "fn": 708
+  },
+  "parameters": {
+    "total": 118555008,
+    "trainable": 118555008
+  },
+  "gpu_memory": [
+    {
+      "device": "Tesla T4",
+      "peak_allocated_mib": 2865.5,
+      "peak_reserved_mib": 3594.0,
+      "capacity_mib": 14911.7
+    },
+    {
+      "device": "Tesla T4",
+      "peak_allocated_mib": 1852.5,
+      "peak_reserved_mib": 2570.0,
+      "capacity_mib": 14911.7
+    }
+  ],
+  "dev_timing": {
+    "embedding_seconds": 23.816583838999577,
+    "ranking_seconds": 0.040584792000117886
+  },
+  "train_seconds_at_checkpoint": 5247.6596723900175,
+  "adapter_ranks": {},
+  "epoch": 16,
+  "completed_epoch": true,
+  "counts_for_patience": false,
+  "early_stopping": {
+    "min_delta": 0.001,
+    "reference_f1": null,
+    "stale_epochs": 0
+  },
+  "checkpoint_sha256": "9cfb312cd7edfa4645f6a4a65d64dd73e377bac8977b29f53dab3c4c25c89caa",
+  "cache_identity": {
+    "version": "phase7-pcr-final-v2",
+    "teacher_sha256": "9cfb312cd7edfa4645f6a4a65d64dd73e377bac8977b29f53dab3c4c25c89caa",
+    "dataset_id": "469bebf0514e8032caa83f12f3736d5be2aa49aafd5393e4055a4dcd48a97f26",
+    "tokenizer_sha256": "ce28d26edf4caa9358ffe59b573e362d9c05a90e881957fa0f2d054a5bfed152",
+    "sequence_length": 512,
+    "document_windows": 3
+  },
+  "train_embedding_seconds": 102.34668742599979
+}

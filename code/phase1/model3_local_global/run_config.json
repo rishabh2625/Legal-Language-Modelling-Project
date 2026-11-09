@@ -1,0 +1,78 @@
+{
+  "version": "local-global-causal-v1",
+  "model": {
+    "vocab_size": 32768,
+    "width": 704,
+    "layers": 16,
+    "heads": 11,
+    "context": 2048,
+    "window": 256,
+    "global_every": 4,
+    "query_chunk": 128,
+    "dropout": 0.0,
+    "activation_checkpointing": false,
+    "loss_chunk": 256
+  },
+  "train": {
+    "seed": 42,
+    "total_data_tokens": 310000000,
+    "sequence_length": 2048,
+    "effective_batch_examples": 32,
+    "micro_batch_per_gpu": 4,
+    "accumulation": 4,
+    "lr": 3e-05,
+    "min_lr": 3e-05,
+    "warmup_fraction": 0.0,
+    "weight_decay": 0.1,
+    "clip": 1.0,
+    "eval_every": 250,
+    "save_every": 100,
+    "log_every": 10,
+    "validation_examples": 128,
+    "extension_provenance": {
+      "parent_checkpoint_sha256": "295b39b67608f2399e74a45fafa2ebaaaac5061bee8dbd4ed81a02fbdad78317",
+      "parent_config": {
+        "version": "local-global-causal-v1",
+        "model": {
+          "vocab_size": 32768,
+          "width": 704,
+          "layers": 16,
+          "heads": 11,
+          "context": 2048,
+          "window": 256,
+          "global_every": 4,
+          "query_chunk": 128,
+          "dropout": 0.0,
+          "activation_checkpointing": false,
+          "loss_chunk": 256
+        },
+        "train": {
+          "seed": 42,
+          "total_data_tokens": 500000000,
+          "sequence_length": 2048,
+          "effective_batch_examples": 32,
+          "micro_batch_per_gpu": 4,
+          "accumulation": 4,
+          "lr": 0.0003,
+          "min_lr": 3e-05,
+          "warmup_fraction": 0.03,
+          "weight_decay": 0.1,
+          "clip": 1.0,
+          "eval_every": 250,
+          "save_every": 100,
+          "log_every": 10,
+          "validation_examples": 128
+        },
+        "gpus": 2,
+        "data_manifest": "212f1453334ba159a36b57ffb635561f2b4afbd4297926807a24b6b02c3d8245"
+      },
+      "parent_tokens": 500000000,
+      "final_total": 810000000,
+      "extension_tokens": 310000000,
+      "selection": "same shuffled target blocks; skip exact consumed prefix including partial block",
+      "learning_rate": "constant parent min_lr"
+    }
+  },
+  "gpus": 2,
+  "data_manifest": "212f1453334ba159a36b57ffb635561f2b4afbd4297926807a24b6b02c3d8245"
+}

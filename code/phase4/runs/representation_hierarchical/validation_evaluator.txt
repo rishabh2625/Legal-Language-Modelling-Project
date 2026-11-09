@@ -1,0 +1,5 @@
+Examples: 2511
+Macro-F1: 0.705211
+Precision: 0.831089
+Recall: 0.539317
+

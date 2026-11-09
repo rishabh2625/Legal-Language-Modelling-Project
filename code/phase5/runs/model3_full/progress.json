@@ -1,0 +1,12 @@
+{
+  "epoch": 10,
+  "position": 12808,
+  "step": 54231,
+  "best_macro_f1": 0.37709790916281327,
+  "bad_epochs": 0,
+  "complete": false,
+  "skipped": 16,
+  "consecutive_amp_skips": 0,
+  "epoch_loss_sum": 352.34326722845435,
+  "epoch_examples": 12808
+}

@@ -1,0 +1,184 @@
+{
+  "spec": {
+    "name": "model3_lora",
+    "method": "lora",
+    "model": "model3",
+    "embedding_dim": 256,
+    "lr": 0.0001,
+    "rank": 8,
+    "alpha": 16
+  },
+  "signature": {
+    "version": "phase7-pcr-final-v2",
+    "spec": {
+      "name": "model3_lora",
+      "method": "lora",
+      "model": "model3",
+      "embedding_dim": 256,
+      "lr": 0.0001,
+      "rank": 8,
+      "alpha": 16
+    },
+    "dataset_id": "469bebf0514e8032caa83f12f3736d5be2aa49aafd5393e4055a4dcd48a97f26",
+    "sequence_length": 512,
+    "document_windows": 3,
+    "ranking_policies": [
+      "dense",
+      "hybrid_tfidf",
+      "hybrid_lexical"
+    ],
+    "tokenizer_sha256": "ce28d26edf4caa9358ffe59b573e362d9c05a90e881957fa0f2d054a5bfed152",
+    "phase1_sha256": "50b00a9e89390e080178cbec343c40605ae93d9ccf51185e8cea7a47817022f0",
+    "seed": 42,
+    "batch_queries": 4,
+    "negatives_per_query": 3,
+    "positives_per_query": 2,
+    "hard_negatives_per_query": 2,
+    "contrastive_temperature": 0.07,
+    "teacher_sha256": null,
+    "distill_temperature": null,
+    "distill_weight": null
+  },
+  "metrics": {
+    "primary_metric_1": 0.38243468593663144,
+    "secondary_metric_1": 0.41646489104116224,
+    "secondary_metric_2": 0.35354573484069884,
+    "tp": 344,
+    "fp": 482,
+    "fn": 629
+  },
+  "step": 1845,
+  "ranking_policy": "hybrid_tfidf",
+  "policy_metrics": {
+    "dense": {
+      "primary_metric_1": 0.29683157309616454,
+      "secondary_metric_1": 0.32324455205811137,
+      "secondary_metric_2": 0.2744090441932169,
+      "tp": 267,
+      "fp": 559,
+      "fn": 706
+    },
+    "hybrid_tfidf": {
+      "primary_metric_1": 0.38243468593663144,
+      "secondary_metric_1": 0.41646489104116224,
+      "secondary_metric_2": 0.35354573484069884,
+      "tp": 344,
+      "fp": 482,
+      "fn": 629
+    },
+    "hybrid_lexical": {
+      "primary_metric_1": 0.35352973874374655,
+      "secondary_metric_1": 0.38498789346246975,
+      "secondary_metric_2": 0.32682425488180883,
+      "tp": 318,
+      "fp": 508,
+      "fn": 655
+    }
+  },
+  "dense_metrics": {
+    "primary_metric_1": 0.29683157309616454,
+    "secondary_metric_1": 0.32324455205811137,
+    "secondary_metric_2": 0.2744090441932169,
+    "tp": 267,
+    "fp": 559,
+    "fn": 706
+  },
+  "parameters": {
+    "total": 119996800,
+    "trainable": 1622016
+  },
+  "gpu_memory": [
+    {
+      "device": "Tesla T4",
+      "peak_allocated_mib": 2045.8,
+      "peak_reserved_mib": 2380.0,
+      "capacity_mib": 14911.7
+    },
+    {
+      "device": "Tesla T4",
+      "peak_allocated_mib": 1922.5,
+      "peak_reserved_mib": 2828.0,
+      "capacity_mib": 14911.7
+    }
+  ],
+  "dev_timing": {
+    "embedding_seconds": 29.623788101000173,
+    "ranking_seconds": 0.03636456200001703
+  },
+  "train_seconds_at_checkpoint": 3314.290881220011,
+  "adapter_ranks": {
+    "blocks.0.attn.qkv": 8,
+    "blocks.0.attn.proj": 8,
+    "blocks.0.ff.0": 8,
+    "blocks.0.ff.2": 8,
+    "blocks.1.attn.qkv": 8,
+    "blocks.1.attn.proj": 8,
+    "blocks.1.ff.0": 8,
+    "blocks.1.ff.2": 8,
+    "blocks.2.attn.qkv": 8,
+    "blocks.2.attn.proj": 8,
+    "blocks.2.ff.0": 8,
+    "blocks.2.ff.2": 8,
+    "blocks.3.attn.qkv": 8,
+    "blocks.3.attn.proj": 8,
+    "blocks.3.ff.0": 8,
+    "blocks.3.ff.2": 8,
+    "blocks.4.attn.qkv": 8,
+    "blocks.4.attn.proj": 8,
+    "blocks.4.ff.0": 8,
+    "blocks.4.ff.2": 8,
+    "blocks.5.attn.qkv": 8,
+    "blocks.5.attn.proj": 8,
+    "blocks.5.ff.0": 8,
+    "blocks.5.ff.2": 8,
+    "blocks.6.attn.qkv": 8,
+    "blocks.6.attn.proj": 8,
+    "blocks.6.ff.0": 8,
+    "blocks.6.ff.2": 8,
+    "blocks.7.attn.qkv": 8,
+    "blocks.7.attn.proj": 8,
+    "blocks.7.ff.0": 8,
+    "blocks.7.ff.2": 8,
+    "blocks.8.attn.qkv": 8,
+    "blocks.8.attn.proj": 8,
+    "blocks.8.ff.0": 8,
+    "blocks.8.ff.2": 8,
+    "blocks.9.attn.qkv": 8,
+    "blocks.9.attn.proj": 8,
+    "blocks.9.ff.0": 8,
+    "blocks.9.ff.2": 8,
+    "blocks.10.attn.qkv": 8,
+    "blocks.10.attn.proj": 8,
+    "blocks.10.ff.0": 8,
+    "blocks.10.ff.2": 8,
+    "blocks.11.attn.qkv": 8,
+    "blocks.11.attn.proj": 8,
+    "blocks.11.ff.0": 8,
+    "blocks.11.ff.2": 8,
+    "blocks.12.attn.qkv": 8,
+    "blocks.12.attn.proj": 8,
+    "blocks.12.ff.0": 8,
+    "blocks.12.ff.2": 8,
+    "blocks.13.attn.qkv": 8,
+    "blocks.13.attn.proj": 8,
+    "blocks.13.ff.0": 8,
+    "blocks.13.ff.2": 8,
+    "blocks.14.attn.qkv": 8,
+    "blocks.14.attn.proj": 8,
+    "blocks.14.ff.0": 8,
+    "blocks.14.ff.2": 8,
+    "blocks.15.attn.qkv": 8,
+    "blocks.15.attn.proj": 8,
+    "blocks.15.ff.0": 8,
+    "blocks.15.ff.2": 8
+  },
+  "epoch": 9,
+  "completed_epoch": true,
+  "counts_for_patience": false,
+  "early_stopping": {
+    "min_delta": 0.001,
+    "reference_f1": null,
+    "stale_epochs": 0
+  },
+  "checkpoint_sha256": "f28d14bad2ebafe7d453338e5c77ae4f08d59e4f6e1b4e744e1380c4ceff12f1"
+}

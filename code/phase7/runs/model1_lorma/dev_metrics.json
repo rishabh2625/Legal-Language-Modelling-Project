@@ -1,0 +1,14 @@
+{
+  "metrics": {
+    "primary_metric_1": 0.3779877709838799,
+    "secondary_metric_1": 0.4116222760290557,
+    "secondary_metric_2": 0.3494347379239466,
+    "tp": 340,
+    "fp": 486,
+    "fn": 633
+  },
+  "timing": {
+    "embedding_seconds": 31.445100295000884,
+    "ranking_seconds": 0.037430723998113535
+  }
+}

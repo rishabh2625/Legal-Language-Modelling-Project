@@ -1,0 +1,167 @@
+{
+  "config": {
+    "seed": 42,
+    "repo": "Exploration-Lab/CS-781-Capstone",
+    "train_tokens": 810000000,
+    "val_tokens": 2000000,
+    "tokenizer_chars": 100000000,
+    "vocab_size": 32768,
+    "validation_fraction": 0.02,
+    "mix": {
+      "supreme_court": 0.35,
+      "high_courts": 0.3,
+      "acts": 0.2,
+      "tribunals": 0.15
+    },
+    "model": {
+      "width": 704,
+      "layers": 16,
+      "heads": 11,
+      "context": 2048,
+      "dropout": 0.0
+    },
+    "train": {
+      "sequence_length": 2048,
+      "micro_batch": 1,
+      "accumulation": 16,
+      "lr": 0.0003,
+      "min_lr": 3e-05,
+      "warmup_fraction": 0.03,
+      "weight_decay": 0.1,
+      "clip": 1.0,
+      "eval_every": 250,
+      "save_every": 100,
+      "log_every": 10,
+      "max_hours": 10.5
+    }
+  },
+  "tokenizer_sha256": "ce28d26edf4caa9358ffe59b573e362d9c05a90e881957fa0f2d054a5bfed152",
+  "files": {
+    "supreme_court.train.bin": {
+      "targets": 252018235,
+      "bytes": 504036472,
+      "sha256": "ffad743a3f16275ab1113c22a269654d62d0241a0b5c98b8e5ef2b31f67c94fe"
+    },
+    "supreme_court.val.bin": {
+      "targets": 700000,
+      "bytes": 1400002,
+      "sha256": "abfb97d616a2de88cea9d1df9b981eb21f63ec331fac46974b296011b1e553db"
+    },
+    "high_courts.train.bin": {
+      "targets": 282834662,
+      "bytes": 565669326,
+      "sha256": "535a29c02166a4c07ddf180348e689cd472a7dd0991e01564794b3f30a0ac07c"
+    },
+    "high_courts.val.bin": {
+      "targets": 600000,
+      "bytes": 1200002,
+      "sha256": "d160a0fdad301cd8b1ccced38cb4e3abdd28cea477545aa9ffbc337dd7795e13"
+    },
+    "acts.train.bin": {
+      "targets": 153647103,
+      "bytes": 307294208,
+      "sha256": "ae35ee99b5292d5ddb82ccdbb789fee75b6599b88d87e4c756d8c3c99e719dc2"
+    },
+    "acts.val.bin": {
+      "targets": 400000,
+      "bytes": 800002,
+      "sha256": "19c6b094ee60d3311cdd46d3ba42b82b4d3848bc31eb860d8f2e20f95f5e1208"
+    },
+    "tribunals.train.bin": {
+      "targets": 121500000,
+      "bytes": 243000002,
+      "sha256": "df81ad6710c77a8508708bd2c1f4a8b3855253df0fc55da76b01df5945b51197"
+    },
+    "tribunals.val.bin": {
+      "targets": 300000,
+      "bytes": 600002,
+      "sha256": "837b9439889f46d979dacf1c54015bb4b2de674f8c5d86ca5f721a6c000d53ea"
+    }
+  },
+  "document_index": "documents.jsonl",
+  "format": "little-endian uint16",
+  "boundary": "EOS between documents; one BOS at beginning of each source/split",
+  "allocation": {
+    "policy": "requested quotas first; deficits filled by unused data",
+    "fallback_order": [
+      "high_courts",
+      "tribunals",
+      "acts",
+      "supreme_court"
+    ],
+    "requested_mix": {
+      "supreme_court": 0.35,
+      "high_courts": 0.3,
+      "acts": 0.2,
+      "tribunals": 0.15
+    },
+    "requested_targets": {
+      "train": {
+        "supreme_court": 283500000,
+        "high_courts": 243000000,
+        "acts": 162000000,
+        "tribunals": 121500000
+      },
+      "val": {
+        "supreme_court": 700000,
+        "high_courts": 600000,
+        "acts": 400000,
+        "tribunals": 300000
+      }
+    },
+    "first_pass_targets": {
+      "supreme_court": {
+        "train": 252018235,
+        "val": 700000
+      },
+      "high_courts": {
+        "train": 243000000,
+        "val": 600000
+      },
+      "acts": {
+        "train": 153647103,
+        "val": 400000
+      },
+      "tribunals": {
+        "train": 121500000,
+        "val": 300000
+      }
+    },
+    "actual_targets": {
+      "supreme_court": {
+        "train": 252018235,
+        "val": 700000
+      },
+      "high_courts": {
+        "train": 282834662,
+        "val": 600000
+      },
+      "acts": {
+        "train": 153647103,
+        "val": 400000
+      },
+      "tribunals": {
+        "train": 121500000,
+        "val": 300000
+      }
+    },
+    "actual_mix": {
+      "train": {
+        "supreme_court": 0.31113362345679013,
+        "high_courts": 0.3491785950617284,
+        "acts": 0.1896877814814815,
+        "tribunals": 0.15
+      },
+      "val": {
+        "supreme_court": 0.35,
+        "high_courts": 0.3,
+        "acts": 0.2,
+        "tribunals": 0.15
+      }
+    },
+    "totals": {
+      "train": 810000000,
+      "val": 2000000
+    }
+  }
+}

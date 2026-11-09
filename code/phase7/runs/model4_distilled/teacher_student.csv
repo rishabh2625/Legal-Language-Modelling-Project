@@ -1,0 +1,3 @@
+role,run,dev_f1_at_7,parameters,ranking_policy,dense_dev_f1_at_7,dev_embedding_seconds,dev_ranking_seconds
+teacher,model3_full,0.3746525847693163,118555008,hybrid_tfidf,0.2946081156197888,23.816583838999577,0.040584792000117886
+student,model4_distilled,0.3779877709838799,51895040,hybrid_tfidf,0.27793218454697055,7.369908945000134,0.042078868000317016

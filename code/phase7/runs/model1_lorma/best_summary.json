@@ -1,0 +1,184 @@
+{
+  "spec": {
+    "name": "model1_lorma",
+    "method": "lorma",
+    "model": "model1",
+    "embedding_dim": 256,
+    "lr": 0.0001,
+    "rank": 8,
+    "alpha": 16
+  },
+  "signature": {
+    "version": "phase7-pcr-final-v2",
+    "spec": {
+      "name": "model1_lorma",
+      "method": "lorma",
+      "model": "model1",
+      "embedding_dim": 256,
+      "lr": 0.0001,
+      "rank": 8,
+      "alpha": 16
+    },
+    "dataset_id": "469bebf0514e8032caa83f12f3736d5be2aa49aafd5393e4055a4dcd48a97f26",
+    "sequence_length": 512,
+    "document_windows": 3,
+    "ranking_policies": [
+      "dense",
+      "hybrid_tfidf",
+      "hybrid_lexical"
+    ],
+    "tokenizer_sha256": "ce28d26edf4caa9358ffe59b573e362d9c05a90e881957fa0f2d054a5bfed152",
+    "phase1_sha256": "cbdbdc8fff1d44d999a857997521135e56c6f92e7b53ec4eb1e72f514e0ce2f2",
+    "seed": 42,
+    "batch_queries": 4,
+    "negatives_per_query": 3,
+    "positives_per_query": 2,
+    "hard_negatives_per_query": 2,
+    "contrastive_temperature": 0.07,
+    "teacher_sha256": null,
+    "distill_temperature": null,
+    "distill_weight": null
+  },
+  "metrics": {
+    "primary_metric_1": 0.3779877709838799,
+    "secondary_metric_1": 0.4116222760290557,
+    "secondary_metric_2": 0.3494347379239466,
+    "tp": 340,
+    "fp": 486,
+    "fn": 633
+  },
+  "step": 4715,
+  "ranking_policy": "hybrid_tfidf",
+  "policy_metrics": {
+    "dense": {
+      "primary_metric_1": 0.2723735408560311,
+      "secondary_metric_1": 0.2966101694915254,
+      "secondary_metric_2": 0.2517985611510791,
+      "tp": 245,
+      "fp": 581,
+      "fn": 728
+    },
+    "hybrid_tfidf": {
+      "primary_metric_1": 0.3779877709838799,
+      "secondary_metric_1": 0.4116222760290557,
+      "secondary_metric_2": 0.3494347379239466,
+      "tp": 340,
+      "fp": 486,
+      "fn": 633
+    },
+    "hybrid_lexical": {
+      "primary_metric_1": 0.3568649249583102,
+      "secondary_metric_1": 0.38861985472154964,
+      "secondary_metric_2": 0.32990750256937307,
+      "tp": 321,
+      "fp": 505,
+      "fn": 652
+    }
+  },
+  "dense_metrics": {
+    "primary_metric_1": 0.2723735408560311,
+    "secondary_metric_1": 0.2966101694915254,
+    "secondary_metric_2": 0.2517985611510791,
+    "tp": 245,
+    "fp": 581,
+    "fn": 728
+  },
+  "parameters": {
+    "total": 121618816,
+    "trainable": 1802240
+  },
+  "gpu_memory": [
+    {
+      "device": "Tesla T4",
+      "peak_allocated_mib": 2382.0,
+      "peak_reserved_mib": 2726.0,
+      "capacity_mib": 14911.7
+    },
+    {
+      "device": "Tesla T4",
+      "peak_allocated_mib": 2279.9,
+      "peak_reserved_mib": 3078.0,
+      "capacity_mib": 14911.7
+    }
+  ],
+  "dev_timing": {
+    "embedding_seconds": 31.445100295000884,
+    "ranking_seconds": 0.037430723998113535
+  },
+  "train_seconds_at_checkpoint": 8322.187415442893,
+  "adapter_ranks": {
+    "blocks.0.attn.qkv": 8,
+    "blocks.0.attn.proj": 8,
+    "blocks.0.mlp.0": 8,
+    "blocks.0.mlp.2": 8,
+    "blocks.1.attn.qkv": 8,
+    "blocks.1.attn.proj": 8,
+    "blocks.1.mlp.0": 8,
+    "blocks.1.mlp.2": 8,
+    "blocks.2.attn.qkv": 8,
+    "blocks.2.attn.proj": 8,
+    "blocks.2.mlp.0": 8,
+    "blocks.2.mlp.2": 8,
+    "blocks.3.attn.qkv": 8,
+    "blocks.3.attn.proj": 8,
+    "blocks.3.mlp.0": 8,
+    "blocks.3.mlp.2": 8,
+    "blocks.4.attn.qkv": 8,
+    "blocks.4.attn.proj": 8,
+    "blocks.4.mlp.0": 8,
+    "blocks.4.mlp.2": 8,
+    "blocks.5.attn.qkv": 8,
+    "blocks.5.attn.proj": 8,
+    "blocks.5.mlp.0": 8,
+    "blocks.5.mlp.2": 8,
+    "blocks.6.attn.qkv": 8,
+    "blocks.6.attn.proj": 8,
+    "blocks.6.mlp.0": 8,
+    "blocks.6.mlp.2": 8,
+    "blocks.7.attn.qkv": 8,
+    "blocks.7.attn.proj": 8,
+    "blocks.7.mlp.0": 8,
+    "blocks.7.mlp.2": 8,
+    "blocks.8.attn.qkv": 8,
+    "blocks.8.attn.proj": 8,
+    "blocks.8.mlp.0": 8,
+    "blocks.8.mlp.2": 8,
+    "blocks.9.attn.qkv": 8,
+    "blocks.9.attn.proj": 8,
+    "blocks.9.mlp.0": 8,
+    "blocks.9.mlp.2": 8,
+    "blocks.10.attn.qkv": 8,
+    "blocks.10.attn.proj": 8,
+    "blocks.10.mlp.0": 8,
+    "blocks.10.mlp.2": 8,
+    "blocks.11.attn.qkv": 8,
+    "blocks.11.attn.proj": 8,
+    "blocks.11.mlp.0": 8,
+    "blocks.11.mlp.2": 8,
+    "blocks.12.attn.qkv": 8,
+    "blocks.12.attn.proj": 8,
+    "blocks.12.mlp.0": 8,
+    "blocks.12.mlp.2": 8,
+    "blocks.13.attn.qkv": 8,
+    "blocks.13.attn.proj": 8,
+    "blocks.13.mlp.0": 8,
+    "blocks.13.mlp.2": 8,
+    "blocks.14.attn.qkv": 8,
+    "blocks.14.attn.proj": 8,
+    "blocks.14.mlp.0": 8,
+    "blocks.14.mlp.2": 8,
+    "blocks.15.attn.qkv": 8,
+    "blocks.15.attn.proj": 8,
+    "blocks.15.mlp.0": 8,
+    "blocks.15.mlp.2": 8
+  },
+  "epoch": 23,
+  "completed_epoch": true,
+  "counts_for_patience": false,
+  "early_stopping": {
+    "min_delta": 0.001,
+    "reference_f1": null,
+    "stale_epochs": 0
+  },
+  "checkpoint_sha256": "659fbb725dbc8c6c228e1d79124d9867d54c72c11f2060a4396cc853c3a5388d"
+}

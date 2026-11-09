@@ -1,0 +1,80 @@
+{
+  "version": "phase6_model2_student_v1",
+  "run_name": "model4_distilled",
+  "model": "model4",
+  "method": "kd",
+  "phase1_checkpoint": "fcab9f52a114bf8b281a219d57cb45e8ff892106c20257d2da45335fcd6d5dbb",
+  "tokenizer": "ce28d26edf4caa9358ffe59b573e362d9c05a90e881957fa0f2d054a5bfed152",
+  "split": "962a8eed648961f537d06cad815f30dfd66639b17a6073848b5d48ad9ea6f038",
+  "token_cache": {
+    "signature": {
+      "data": "962a8eed648961f537d06cad815f30dfd66639b17a6073848b5d48ad9ea6f038",
+      "tokenizer": "ce28d26edf4caa9358ffe59b573e362d9c05a90e881957fa0f2d054a5bfed152",
+      "version": "phase6_grouped_split_v2_blank_refs"
+    },
+    "sha256": {
+      "index.json": "208e97db9078a7c31ddd97275c99e80d878761b3fdafa4c90dfad4688fcbb9b3",
+      "train_documents.bin": "62baad38def3aa7f089b0ac73105e550137a4a16e3968261f29ede76827e97b1",
+      "train_summaries.bin": "f62897ff1481bbe2a6fad91a3c7d4cedf5d1720390be0f18b57784b4c93dd72c",
+      "val_documents.bin": "7745a05e48fc4f29b49b647b58f7fb5c11a71e649b44dd00bb645bb44907daee",
+      "val_summaries.bin": "7a485b30ba719e31a2b131b32bd3a964789ae9049f53bad863da1c31d274b82e",
+      "test_documents.bin": "8d71198a7abda795c0d231ceb0b78031c9000fe589a1b24c88eee484fcdf231d",
+      "test_summaries.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "config": {
+    "seed": 42,
+    "epochs": 20,
+    "patience": 3,
+    "context_policy": "head_tail",
+    "min_lr_ratio": 0.1,
+    "warmup_fraction": 0.06,
+    "weight_decay": 0.01,
+    "clip": 1.0,
+    "effective_batch": 8,
+    "micro_batch": 1,
+    "activation_checkpointing": true,
+    "loss_chunk": 128,
+    "log_every": 20,
+    "save_every": 100,
+    "max_hours": 10.5,
+    "amp_initial_scale": 1024.0,
+    "max_consecutive_amp_skips": 12,
+    "capacity_headroom_gib": 1.5,
+    "initial_generation_baseline": true,
+    "source_tokens": 1536,
+    "target_tokens": 384,
+    "lr": 2e-05,
+    "adapter_dropout": 0.0,
+    "student_keep": [
+      0,
+      2,
+      4,
+      6,
+      7,
+      8,
+      9,
+      15
+    ]
+  },
+  "decode": {
+    "temperature": 0.0,
+    "top_p": 0.95,
+    "max_new_tokens": 384,
+    "min_new_tokens": 32,
+    "no_repeat_ngram": 4,
+    "repetition_penalty": 1.1,
+    "batch_size": 4,
+    "seed": 42
+  },
+  "prompt": [
+    "Summarize the following legal document, preserving key facts, legal reasoning and the decision.\nDocument:\n",
+    "\nSummary:\n"
+  ],
+  "torch": "2.11.0+cu128",
+  "distillation": {
+    "kind": "sequence_level_teacher_targets",
+    "checkpoint": "c26ac48cb1711f1dff189bb2cd52829b289389aae15c614a034eec5c7fe7139c",
+    "predictions": "d7672cbd423ea1fd8b4b5e75177e4914f4008b3880ca30f9d0bcd8c525977635"
+  }
+}

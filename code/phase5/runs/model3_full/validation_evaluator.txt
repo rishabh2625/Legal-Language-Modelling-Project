@@ -1,0 +1,6 @@
+Examples: 10181
+Labels: 100
+Macro-F1: 0.377098
+Micro-F1: 0.494435
+Subset Accuracy: 0.053728
+

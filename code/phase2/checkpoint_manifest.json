@@ -1,0 +1,49 @@
+{
+  "dataset": "Exploration-Lab/CS-781-Capstone",
+  "dataset_folder": "Phase_2_LNER",
+  "dataset_revision": "89edba6a44d6bb9593fd13b6895b5cd3b06eb82e",
+  "runs": {
+    "model1_adapters_crf": {
+      "backup_archive": "model1_adapters_crf_v1.zip",
+      "checkpoint_member": "run/best.pt",
+      "checkpoint_sha256": "dc24314bf167bad5ca4619827322046cd23083a439fae712723433e9738c6b08",
+      "test_submission_member": "run/test_predictions/3191e207ba53ed1a/submission.zip",
+      "parent_phase1_model": "model1_decoder",
+      "metadata_directory": "model1_decoder/crf"
+    },
+    "model2_adapters": {
+      "backup_archive": "phase2_model2_adapters_1791570788056734549.zip",
+      "checkpoint_member": "phase2_model2_adapters/best.pt",
+      "checkpoint_sha256": "973dc9912ebc34298d4f316e39941bcfa0f0f23e04a630242c24325d7cf4cebb",
+      "test_submission_member": "phase2_model2_adapters/test_predictions/446a4dcadc8475fe/submission.zip",
+      "parent_phase1_model": "model2_encoder_decoder",
+      "metadata_directory": "model2_encoder_decoder"
+    },
+    "model3_full_v3": {
+      "backup_archive": "phase2_model3_full_v3.zip",
+      "checkpoint_member": "best.pt",
+      "checkpoint_sha256": "92ffb9bc4345ff0ff50c34c827a3608f14d377a15b86b1764b961fafc866dcaf",
+      "test_submission_member": "test_predictions/5274c66ccac42390/submission.zip",
+      "parent_phase1_model": "model3_local_global",
+      "metadata_directory": "model3_local_global"
+    },
+    "model4_distilled": {
+      "backup_archive": "model4_phase2_everything_1791670971554631258.zip",
+      "checkpoint_member": "phase2_model4_distillation/student/best.pt",
+      "checkpoint_sha256": "80110cf5e79e09e7fef23d696091be6f8af8e36bb9c8a0a31026c8a1495ca4f0",
+      "test_submission_member": "phase2_model4_distillation/student/test_predictions/c4b8dc51a623373c/submission.zip",
+      "parent_phase1_model": "model4_gated_cnn",
+      "metadata_directory": "model4_gated_cnn/distilled",
+      "teacher_sha256": "dc24314bf167bad5ca4619827322046cd23083a439fae712723433e9738c6b08"
+    },
+    "model4_no_kd_loss": {
+      "backup_archive": "model4_phase2_everything_1791670971554631258.zip",
+      "checkpoint_member": "model4_no_kd_loss_control/student/best.pt",
+      "checkpoint_sha256": "e67620d6be70c9f571798970a39ca681eeb204148d241f4d791a08b480c2df2a",
+      "test_submission_member": "model4_no_kd_loss_control/student/test_predictions/415dc53b1fbf1fe3/submission.zip",
+      "parent_phase1_model": "model4_gated_cnn",
+      "metadata_directory": "model4_gated_cnn/no_kd_loss",
+      "teacher_sha256": "dc24314bf167bad5ca4619827322046cd23083a439fae712723433e9738c6b08"
+    }
+  }
+}

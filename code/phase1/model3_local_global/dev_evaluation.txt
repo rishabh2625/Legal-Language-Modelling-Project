@@ -1,0 +1,4 @@
+Examples: 212
+BERTScore F1: 0.855813
+ROUGE-L F1:   0.292932
+BLEU-4:       0.189550
